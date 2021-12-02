@@ -9,10 +9,13 @@ import numpy as np
 import pandas as pd
 import argparse
 
+
 parser = argparse.ArgumentParser(description='Cleans up NOAA weather data')
 parser.add_argument('-f', '--filepath', default='jfk_weather.csv', help='Filepath to NOAA weather data')
 parser.add_argument('-v', '--verbose', action='store_true', help='Print verbose')
 args = parser.parse_args()
+
+
 
 def tryconvert(value, dt=None):
     """
