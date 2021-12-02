@@ -2,8 +2,8 @@ import math
 import argparse
 
 parser = argparse.ArgumentParser(description="Calculate area of a rectangule")
-parser.add_argument('-c', '--size1', type=int, help="First size")
-parser.add_argument('-d', '--size2', type=int, help="Second size")
+parser.add_argument('-c', '--size1', type=int, metavar="", help="First size")
+parser.add_argument('-d', '--size2', type=int, metavar="", help="Second size")
 
 arg = parser.parse_args()
 
